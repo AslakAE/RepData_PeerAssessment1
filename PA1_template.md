@@ -125,9 +125,6 @@ data_na_replaced <- data %>%
 Histogram of the total number of steps taken each day. 
 
 ```r
-# Load ggplot2
-library(ggplot2)
-
 # Calculate steps per day
 no_steps_pr_day_na_replaced <- data_na_replaced %>%
         group_by(date) %>%

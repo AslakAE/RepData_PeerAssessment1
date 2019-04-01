@@ -193,10 +193,7 @@ data_na_replaced &lt;- data %&gt;%
         group_by(interval) %&gt;%
         mutate(steps = ifelse(is.na(steps), mean(steps, na.rm = TRUE), steps))</code></pre>
 <p>Histogram of the total number of steps taken each day.</p>
-<pre class="r"><code># Load ggplot2
-library(ggplot2)
-
-# Calculate steps per day
+<pre class="r"><code># Calculate steps per day
 no_steps_pr_day_na_replaced &lt;- data_na_replaced %&gt;%
         group_by(date) %&gt;%
         summarise(steps = sum(steps))
