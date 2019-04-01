@@ -99,7 +99,7 @@ max_interval
 ```
 
 ## Imputing missing values
-Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with \color{red}{\verb|NA|}NAs).
+Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NA)
 
 ```r
 # Summarize rows with NA in steps column
